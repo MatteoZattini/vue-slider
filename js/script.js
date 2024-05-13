@@ -53,6 +53,9 @@ createApp({
             } else {
                 this.activeImage = this.slides.length - 1
             }
+        },
+        select(element) {
+            this.activeImage = element
         }
     }
 }).mount('#app')

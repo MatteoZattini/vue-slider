@@ -28,7 +28,7 @@
                     <div @click="previous(i)" class="prev"></div>
                     <div @click="next(i)" class="next"></div>
                     <div v-for="slide, i in slides" :class="checkActiveObject(i)" class="thumb">
-                        <img :src="slide.image" alt=""/>
+                        <img @click="select(i)" :src="slide.image" alt=""/>
                     </div>
                 </div>
 
