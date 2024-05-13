@@ -40,5 +40,19 @@ createApp({
                 return ""
            }
         },
+        next() {
+            if (this.activeImage < this.slides.length - 1) {
+                this.activeImage++
+            } else {
+                this.activeImage = 0
+            }
+        },
+        previous() {
+            if (this.activeImage > 0) {
+                this.activeImage--
+            } else {
+                this.activeImage = this.slides.length - 1
+            }
+        }
     }
 }).mount('#app')
