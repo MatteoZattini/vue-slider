@@ -16,7 +16,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div v-for="slide, i in slides" :class="checkActiveObject(slide)" class="item">
+                <div v-for="slide, i in slides" :class="checkActiveObject(i)" class="item">
                     <img :src="slide.image" alt=""/>
                     <div class="text">
                         <h3>{{ slide.title }}</h3>
